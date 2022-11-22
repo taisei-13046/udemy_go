@@ -17,6 +17,11 @@ func (v *Vertex) Scale(i int) {
 	v.Y = v.Y * i
 }
 
+// コンストラクタ
+func New(x, y int) *Vertex {
+	return &Vertex{x, y}
+}
+
 func main() {
 	v := Vertex{3, 4}
 	fmt.Println(v.Area())
